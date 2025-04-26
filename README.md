@@ -23,11 +23,19 @@ As part of the organization's year-end assessment evaluating the 2022-2023 progr
 
 <b>Data Sheet 1: Main Sheet </b>
 
+<img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg1.1.png"/>
+
 <b>Data Sheet 2: Heatmap-Posting Times </b>
+
+<img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg1.2.png"/>
 
 <b>Data Sheet 3: Heatmap-Engagements</b>
 
+<img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg1.3.png"/>
+
 <b>Data Sheet 4: Top 5 Lists-Engagements by Topics </b>
+
+<img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg1.4.png"/>
 
 ### Organization 2
 
@@ -39,4 +47,13 @@ I spearheaded and was the head of the organizing committee responsible for this 
 
 <b>Data Sheet 3: Progression of Points </b>
 
+<img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg2.3.png"/>
+
+
 ### Organization 3
+
+<img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg3.1.png"/>
+
+<img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg3.2.png"/>
+
+
