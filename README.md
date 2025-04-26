@@ -15,6 +15,17 @@
 
 # Bayes Studio
 
+To install Python: [Install](https://www.python.org/ftp/python/3.12.0/python-3.12.0-amd64.exe)
+
+```bash
+python --version
+pip --install
+```
+
+```bash
+pip install label-studio
+```
+
 # Filipino Canadian Youth Organizations
 
 ### Organization 1
