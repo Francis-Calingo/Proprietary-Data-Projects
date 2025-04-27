@@ -18,17 +18,13 @@
 # 2025 National Mental Health Datathon
 
 <img src="https://img.shields.io/badge/Oracle-F80000?logo=oracle&logoColor=black"/>
-
 <img src="https://img.shields.io/badge/PLSQL-F80000?logo=oracle&logoColor=black"/>
-
+<img src="https://img.shields.io/badge/Nextcloud-0082C9?logo=Nextcloud&logoColor=white&style=plastic" alt="NextCloud Badge"/>
 <img src="https://img.shields.io/badge/Microsoft_Excel-217346?logo=microsoft-excel&logoColor=white"/>
 
 # M2M Tech
 
 <img src="https://img.shields.io/badge/powershell-5391FE?logo=powershell&logoColor=white&style=plastic" alt="PowerShell Badge"/>  
-
-
-
 
 To install Python: [Install](https://www.python.org/ftp/python/3.12.0/python-3.12.0-amd64.exe)
 
@@ -44,7 +40,6 @@ pip install label-studio
 # Filipino Canadian Youth Organizations
 
 <img src="https://img.shields.io/badge/Google%20Sheets-34A853?logo=google-sheets&logoColor=white&style=plastic" alt="Google Sheets Badge"/>  
-
 <img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white&style=plastic" alt="Gmail Badge"/>  
 
 ### Organization 1
