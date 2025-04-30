@@ -15,6 +15,8 @@
 
 <img src="https://img.shields.io/badge/Microsoft_Excel-217346?logo=microsoft-excel&logoColor=white"/>
 
+To better present my weekly findings to senior analysts, I developed weekly dashboards that succinctly summarizes key metric related to collated content (i.e., relevant posts and comments from the Canadian digital media environment that touches on topics pertinent to the agency such as, but not limited to, democratic institutions and views on electoral systems).
+
 # 2025 National Mental Health Datathon
 
 <img src="https://img.shields.io/badge/Oracle-F80000?logo=oracle&logoColor=black"/>
@@ -28,12 +30,12 @@
 
 To install Python: [Install](https://www.python.org/ftp/python/3.12.0/python-3.12.0-amd64.exe)
 
-```bash
+```powershell
 python --version
 pip --install
 ```
 
-```bash
+```powershell
 pip install label-studio
 ```
 
