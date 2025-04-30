@@ -24,6 +24,67 @@ To better present my weekly findings to senior analysts, I developed weekly dash
 <img src="https://img.shields.io/badge/Nextcloud-0082C9?logo=Nextcloud&logoColor=white&style=plastic" alt="NextCloud Badge"/>
 <img src="https://img.shields.io/badge/Microsoft_Excel-217346?logo=microsoft-excel&logoColor=white"/>
 
+Collaborated with a team of seven that contributed to a pipeline that involved uploading documentation onto NextCloud, using Oracle SQL to transform proprietary mental health data from across **10 different datasets (totalling 11,919,097 entries-1,702,900 records and 97 fields-spanning 6 years)**, then feeding processed data to Tableau to construct interactive dashboards that was presented to participating mental health organizations such as the Canadian Mental Health Association. I used the following sql script to create a copy of an organization’s database, then filter out null values and unnecessary records and fields:
+
+```sql
+--Create new table from organizational data
+CREATE TABLE ORG_DATA_COPY AS SELECT * FROM ORG.INDICATOR_TABLES_JOINED;
+
+
+SELECT * FROM ORG_DATA_COPY;
+
+
+--Delete selected records (not needed for analysis)
+DELETE FROM ORG_DATA_COPY WHERE FIELD_1 IN ('Unspecified_Record_1', 'Unspecified_Record_2', 'Unspecified_Record_3');
+
+
+--Select columns that do not have null value
+CREATE TABLE ORG_DATA_FILTER AS SELECT FIELD_1, UNSPECIFIED_FIELD_1, UNSPECIFIED_FIELD_2,
+UNSPECIFIED_FIELD_3, UNSPECIFIED_FIELD_4, UNSPECIFIED_FIELD_5, UNSPECIFIED_FIELD_6,
+UNSPECIFIED_FIELD_7, UNSPECIFIED_FIELD_8, UNSPECIFIED_FIELD_9, UNSPECIFIED_FIELD_10,
+UNSPECIFIED_FIELD_11, UNSPECIFIED_FIELD_12 FROM ORG_DATA_COPY;
+
+
+SELECT * FROM ORG_DATA_FILTER;
+
+
+--Delete second and third columns (not quantitative)
+ALTER TABLE ORG_DATA_FILTER DROP COLUMN UNSPECIFIED_FIELD_1;
+ALTER TABLE ORG_DATA_FILTER DROP COLUMN UNSPECIFIED_FIELD_2;
+
+
+SELECT * FROM ORG_DATA_FILTER;
+
+
+---We are interested in the following variables: Unspecified Variable 1, Unspecified Variable, Unspecified Variable 3
+
+
+CREATE TABLE ORG_DATA_3VAR AS SELECT "FIELD_1", "Unspecified_Variable_1", "Unspecified_Variable_2", "Unspecified_Variable_3" FROM ORG_DATA_FILTER;
+
+
+SELECT * FROM ORG_DATA_3VAR;
+
+
+---Rename columns for simplicity
+
+
+ALTER TABLE ORG_DATA_3VAR
+RENAME COLUMN "Unspecified_Variable_1" TO "Descriptive_Name_1";
+
+
+ALTER TABLE ORG_DATA_3VAR
+RENAME COLUMN "Unspecified_Variable_2" TO "Descriptive_Name_2";
+
+
+ALTER TABLE ORG_DATA_3VAR
+RENAME COLUMN "Unspecified_Variable_3" TO "Descriptive_Name_3";
+
+
+SELECT * FROM ORG_DATA_3VAR;
+```
+
+The final database was exported as a csv file then uploaded to NextCloud to be fed to the Tableau dashboard.
+
 # M2M Tech
 
 <img src="https://img.shields.io/badge/powershell-5391FE?logo=powershell&logoColor=white&style=plastic" alt="PowerShell Badge"/>  
