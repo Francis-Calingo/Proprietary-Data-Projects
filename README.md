@@ -15,7 +15,10 @@
 
 <img src="https://img.shields.io/badge/Microsoft_Excel-217346?logo=microsoft-excel&logoColor=white"/>
 
-To better present my weekly findings to senior analysts, I developed weekly dashboards that succinctly summarizes key metric related to collated content (i.e., relevant posts and comments from the Canadian digital media environment that touches on topics pertinent to the agency such as, but not limited to, democratic institutions and views on electoral systems).
+To better present my weekly findings to senior analysts, I developed weekly dashboards that succinctly summarizes key metric related to collated content (i.e., relevant posts and comments from the Canadian digital media environment that touches on topics pertinent to the agency such as, but not limited to, democratic institutions and views on electoral systems). The following is a sample dashboard (with proprietary data being redacted in red).
+
+<img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/ElectionsCanadaDashboard.JPG"/>
+
 
 # 2025 National Mental Health Datathon
 
@@ -24,7 +27,7 @@ To better present my weekly findings to senior analysts, I developed weekly dash
 <img src="https://img.shields.io/badge/Nextcloud-0082C9?logo=Nextcloud&logoColor=white&style=plastic" alt="NextCloud Badge"/>
 <img src="https://img.shields.io/badge/Microsoft_Excel-217346?logo=microsoft-excel&logoColor=white"/>
 
-Collaborated with a team of seven that contributed to a pipeline that involved uploading documentation onto NextCloud, using Oracle SQL to transform proprietary mental health data from across **10 different datasets (totalling 11,919,097 entries-1,702,900 records and 97 fields-spanning 6 years)**, then feeding processed data to Tableau to construct interactive dashboards that was presented to participating mental health organizations such as the Canadian Mental Health Association. I used the following sql script to create a copy of an organization’s database, then filter out null values and unnecessary records and fields:
+Collaborated with a team of seven that contributed to a pipeline that involved uploading documentation onto NextCloud, using Oracle SQL to transform proprietary mental health data from across **10 different datasets (totalling 11,919,097 entries-1,702,900 records and 97 fields-spanning 6 years)**, then feeding processed data to Tableau to construct interactive dashboards that was presented to participating mental health organizations such as the Canadian Mental Health Association. I used the following sql script to create a copy of an organization’s database, then filter out null values and unnecessary records and fields (keep in mind that generic names have been used in place of the actual names of datasets, records, fields, variables, etc.):
 
 ```sql
 --Create new table from organizational data
