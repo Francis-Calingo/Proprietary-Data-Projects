@@ -19,6 +19,20 @@ To better present my weekly findings to senior analysts, I developed weekly dash
 
 <img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/ElectionsCanadaDashboard.JPG"/>
 
+I also collaborated with a senior analyst to create a Tagalog language Meltwater Boolean query to help capture posts and comments from social and traditional media platforms:
+
+```meltwater
+
+(“Halalan Canada” OR “Halalan sa Canada” OR  “Eleksyons Canada” OR “Eleksyons sa Canada” OR “Eleksyon sa Canada” OR “Komisyoner ng Canada Elections” OR “Komisyoner sa Eleksyon sa Canada” OR “Komisyoner ng Halalan sa Canada” OR “Batas sa halalan sa Canada”) 
+OR 
+((“Araw ng Eleksyon” OR “Pagboto sa mail” OR “Bumoto nang advance” OR “panghihimasok ng dayuhan” OR “susunod na halalan” OR “susunod na eleksyon” OR “susunod na election” OR “45th na election" OR “panghalalan” OR “45th na eleksyon" OR “45th na halalan" OR “Halalan 2025” OR “Halalan 2025”  OR “punong opisyal ng electoral” OR “punong opisyal ng Eleksyon” OR “punong opisyal ng halalan” OR “opisyal ng electoral” OR “opisyal ng Eleksyon” OR “opisyal ng halalan” OR "Araw ng Eleksyon” OR “Araw ng Halalan” OR “Petsa ng halalan” OR “Petsa ng eleksyon” OR  “Bumoto nang advance” OR “panghihimasok ng dayuhan” OR “Pangkalahatang halalan” OR “Pangkalahatang eleksyon” OR “Pederal na halalan” OR “Pederal na eleksyon” OR "Halalan" OR “Eleksyon” OR “Pederal na byelection” OR  “Pederal na by-election” OR “Paunang pagboto” OR “listahan ng mga botante” OR “lugar ng pagboto” OR “lokasyon ng Pagboto” OR “istasyon ng botohan” OR “istasyon sa pagboto” OR “Gabay sa pagboto” OR "makina sa pagboto" OR “Online na pagboto” OR "Pagboto sa mail" OR “bumoto sa pamamagitan ng koreo” OR “Ikinoreong Pagboto”  OR “balotang papel” OR “espesyal na balota”) 
+AND 
+("Canada" OR “Canadian” OR “Canadyano” OR “Kanadyano” OR “Winnipeg” OR “Winnipeg North” OR “Winnipeg Centre” OR “Mount Royal” OR “Scarborough Centre” OR “Eglinton—Lawrence” OR “Eglinton-Lawrence” OR “Eglinton Lawrence”  OR “York Centre” OR “Mississauga—Streetsville” OR “Mississauga-Streetsville” OR “Mississauga Streetsville” OR “Calgary Forest Lawn” OR “Edmonton West” OR “Saskatoon West” OR “New Westminster—Burnaby” OR “New Westminster-Burnaby” OR “New Westminster Burnaby” OR “New Westminster” OR “Burnaby” OR “Fleetwood—Port Kells” OR “Fleetwood-Port Kells” OR “Fleetwood Port Kells” OR “Surrey Centre” OR “Surrey” OR “Vancouver Kingsway” OR “Vancouver South”))
+
+```
+
+Note that the riding names represent the federal ridings with the highest per-capita Filipino population.
+
 
 # 2025 National Mental Health Datathon
 
