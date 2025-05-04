@@ -197,13 +197,15 @@ As part of the organization's year-end assessment evaluating the 2022-2023 progr
 
 <b>Data Sheet 1: Main Sheet </b>
 
+**638 entries (58 records x 11 fields)**
+
 <img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg1.1.png"/>
 
 <b>Data Sheet 2: Heatmap-Posting Times </b>
 
 <img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg1.2.png"/>
 
-<b>Data Sheet 3: Heatmap-Engagements</b>
+<b>Data Sheet 3: Heatmap-Engagements by Topic</b>
 
 <img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg1.3.png"/>
 
@@ -217,9 +219,19 @@ I spearheaded and was the head of the organizing committee responsible for this 
 
 <b>Data Sheet 1: Participant Sign-Up Information </b>
 
-<b>Data Sheet 2: Feedback From Data, Organizing Committee Members </b>
+**400 entries (25 records x 16 fields)**
 
-<b>Data Sheet 3: Progression of Points </b>
+<img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg2.1.png"/>
+
+<b>Data Sheet 2: Feedback Form Data, Organizing Committee Members </b>
+
+**132 entries (12 records x 11 fields)**
+
+Google Sheet file generated from Google Form responses.
+
+<img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg2.2.png"/>
+
+<b>Data Sheet 3: Progression of Points (as of March) </b>
 
 <img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg2.3.png"/>
 
