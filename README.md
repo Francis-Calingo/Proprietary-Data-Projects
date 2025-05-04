@@ -103,6 +103,8 @@ SELECT * FROM ORG_DATA_3VAR;
 
 The final database was exported as a csv file then uploaded to NextCloud to be fed to the Tableau dashboard.
 
+To download the SQL file hosting the above sql script (maintaining the redactions): [Download file](https://github.com/Francis-Calingo/Proprietary-Data-Projects/raw/main/Datathon%20Data%20PreProcessing%20Script.sql)
+
 # M2M Tech
 
 <img src="https://img.shields.io/badge/powershell-5391FE?logo=powershell&logoColor=white&style=plastic" alt="PowerShell Badge"/>  
