@@ -11,6 +11,60 @@
 
 <img src="https://img.shields.io/badge/Microsoft_Excel-217346?logo=microsoft-excel&logoColor=white"/>
 
+Utilized Excel and accounting software such as Ballys to verify financial entries by gaming floor personnel. However, discrepancies often arise with reporting, for legitimate reasons.
+
+In this example, I will show I was able to harness Excel to help streamline the verification process. In this scenario, the Tables department reports certain amount of money for some tables, but the system reports $0 for said tables, most likely due to glitches, which are not unusual. In that case, I would download both the system and Tables department report as csv's, and compare both. **The values and table names are made-up to maintain the proprietary nature of the verification process. There are also only a few records present for demonstration purposes only, and does not accurately reflect the high volume of tables available on the gaming floor.**
+
+<b>CSV from Table Games Department</b>
+
+| Table Game  | Other Columns | Amount Reported ($) |
+| ------------- | ------------- | ------------- |
+| AB501 | ------------- | 766 |
+| AB502 | ------------- | 201 |
+| AB503 | ------------- | 1055 |
+| CS307 | ------------- | 94 |
+| CS308 | ------------- | 476 |
+| CS309 | ------------- | 877 |
+| FX702 | ------------- | 503 |
+| KL244 | ------------- | 3022 |
+| KL246 | ------------- | 711 |
+| TT904 | ------------- | 2491 |
+
+<b>CSV from System</b>
+
+| Table Game  | Other Columns | Amount Reported ($) |
+| ------------- | ------------- | ------------- |
+| AB501 | ------------- | 766 |
+| AB502 | ------------- | 201 |
+| AB503 | ------------- | 0 |
+| CS307 | ------------- | 94 |
+| CS308 | ------------- | 476 |
+| CS309 | ------------- | 0 |
+| FX702 | ------------- | 0 |
+| KL244 | ------------- | 3022 |
+| KL246 | ------------- | 711 |
+| TT904 | ------------- | 0 |
+
+<b>New CSV</b>
+
+| Table Game  | Amount Reported, Tables | Amount Reported, System | System - Tables |
+| ------------- | ------------- | ------------- | ------------- |
+| AB501 | 766 | 766 | ```=C2-B2 ```|
+| AB502 | 201 | 201 | ```=C3-B3 ```|
+| AB503 | 1055 | 0 | ```=C4-B4 ```|
+| CS307 | 94 | 94 | ```=C5-B5 ```|
+| CS308 | 476 | 476 | ```=C6-B6 ```|
+| CS309 | 877 | 0 | ```=C7-B7 ```|
+| FX702 | 503 | 0 | ```=C8-B8 ```|
+| KL244 | 3022 | 3022 | ```=C9-B9 ```|
+| KL246 | 711 | 711 | ```=C10-B10 ```|
+| TT904 | 2491 | 0 | ```=C11-B11 ```|
+
+Some rows on the fourth column will show non-zero values, which can then be easily filtered for, resulting in the tables that have discrepancies.
+
+
+[<b>Back to Table of Contents</b>](#table-of-contents)
+
 # Elections Canada
 
 <img src="https://img.shields.io/badge/Microsoft_Excel-217346?logo=microsoft-excel&logoColor=white"/>
@@ -33,6 +87,8 @@ AND
 ```
 
 Note that the riding names represent the federal ridings with the highest per-capita Filipino population.
+
+[<b>Back to Table of Contents</b>](#table-of-contents)
 
 
 # 2025 National Mental Health Datathon
@@ -107,6 +163,8 @@ The final database was exported as a csv file then uploaded to NextCloud to be f
 
 To download the SQL file hosting the above sql script (maintaining the redactions): [Download file](https://github.com/Francis-Calingo/Proprietary-Data-Projects/raw/main/Datathon%20Data%20PreProcessing%20Script.sql)
 
+[<b>Back to Table of Contents</b>](#table-of-contents)
+
 # M2M Tech
 
 <img src="https://img.shields.io/badge/powershell-5391FE?logo=powershell&logoColor=white&style=plastic" alt="PowerShell Badge"/>  
@@ -125,6 +183,8 @@ pip --install
 ```powershell
 pip install label-studio
 ```
+
+[<b>Back to Table of Contents</b>](#table-of-contents)
 
 # Filipino Canadian Youth Organizations
 
@@ -169,5 +229,7 @@ I spearheaded and was the head of the organizing committee responsible for this 
 <img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg3.1.png"/>
 
 <img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg3.2.png"/>
+
+[<b>Back to Table of Contents</b>](#table-of-contents)
 
 
