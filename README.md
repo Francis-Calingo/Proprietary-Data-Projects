@@ -238,7 +238,13 @@ Google Sheet file generated from Google Form responses.
 
 ### Organization 3
 
+To automate mass-emailing of organizations and individuals (with attached letters), while ensuring that the names of the individual recipient are embedded in both the email and documents to keep the correspondance genuine, Gmail's Mail Merge was used.
+
+<img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg3.3.png"/>
+
 <img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg3.1.png"/>
+
+The resulting email with attachments:
 
 <img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/FilipinoOrg3.2.png"/>
 
