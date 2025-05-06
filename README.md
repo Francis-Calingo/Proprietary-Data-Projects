@@ -1,4 +1,6 @@
-# Proprietary-Data-Projects
+# Proprietary Data Projects
+
+This repo lists tasks and projects involving proprietary data (i.e., data that cannot be fully disclosed to the public) and provide valuable insights for respective organizations and employers.
 
 # Table of Contents
 * [Audit at Great Canadian Casino Resort Toronto](#audit-at-great-canadian-casino-resort-toronto)
