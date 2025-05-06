@@ -67,6 +67,8 @@ Some rows on the fourth column will show non-zero values, which can then be easi
 
 [<b>Back to Table of Contents</b>](#table-of-contents)
 
+---
+
 # Elections Canada
 
 <img src="https://img.shields.io/badge/Microsoft_Excel-217346?logo=microsoft-excel&logoColor=white"/>
@@ -92,6 +94,7 @@ Note that the riding names represent the federal ridings with the highest per-ca
 
 [<b>Back to Table of Contents</b>](#table-of-contents)
 
+---
 
 # 2025 National Mental Health Datathon
 
@@ -167,6 +170,8 @@ To download the SQL file hosting the above sql script (maintaining the redaction
 
 [<b>Back to Table of Contents</b>](#table-of-contents)
 
+---
+
 # M2M Tech
 
 <img src="https://img.shields.io/badge/powershell-5391FE?logo=powershell&logoColor=white&style=plastic" alt="PowerShell Badge"/>  
@@ -187,6 +192,8 @@ pip install label-studio
 ```
 
 [<b>Back to Table of Contents</b>](#table-of-contents)
+
+---
 
 # Filipino Canadian Youth Organizations
 
