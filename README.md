@@ -74,9 +74,13 @@ Some rows on the fourth column will show non-zero values, which can then be easi
 <img src="https://img.shields.io/badge/Microsoft_Excel-217346?logo=microsoft-excel&logoColor=white"/>
 <img src="https://img.shields.io/badge/Media%20Monitoring-Meltwater-1DB2AC?logo=meltwater&logoColor=white"/>
 
+### Weekly Dashboard
+
 To better present my weekly findings to senior analysts, I developed weekly dashboards that succinctly summarizes key metric related to collated content (i.e., relevant posts and comments from the Canadian digital media environment that touches on topics pertinent to the agency such as, but not limited to, democratic institutions and views on electoral systems). The following is a sample dashboard (with proprietary data being redacted in red).
 
 <img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/ElectionsCanadaDashboard.JPG"/>
+
+### Filipino Language Monitoring
 
 I also collaborated with a senior analyst to create a Tagalog language Meltwater Boolean query to help capture posts and comments from social and traditional media platforms:
 
