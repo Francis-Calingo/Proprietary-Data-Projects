@@ -96,6 +96,13 @@ AND
 
 Note that the riding names represent the federal ridings with the highest per-capita Filipino population.
 
+### Special Quantitative Projects
+
+I have led two special quantitative projects ascertaining demographic and media information on the Filipino Canadian community. The first one is complete and the other one is ongoing, both covering the demographic aspects of each project:
+
+* [Brief Demographic Report of the Filipino Canadian Community](http://github.com/Francis-Calingo/ELECTIONS-CANADA-RESEARCH-PROJECT-Filipino-Canadian-Demographic-Report)
+* [Demographics of Ilocano Speakers in Canada](https://github.com/Francis-Calingo/ELECTIONS-CANADA-RESEARCH-PROJECT-Ilocano-Speakers-Canada)
+
 [<b>Back to Table of Contents</b>](#table-of-contents)
 
 ---
