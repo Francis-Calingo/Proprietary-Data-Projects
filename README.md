@@ -202,6 +202,125 @@ pip --install
 pip install label-studio
 ```
 
+PowerShell script for creating batches of downloaded images (path file and file names redacted in compliance with NDA):
+
+```powershell
+#### UNZIP AFTER DOWNLOADING IMAGES AS ZIP FILE ####
+
+
+cd "C:\path\to\folder"  
+
+
+Expand-Archive -Path "C:\path\to\folder\File-Of-Images-To-Unzip.zip" -DestinationPath "target_images"
+
+
+#### SORT INTO BATCHES ####
+
+
+cd "C:\path\to\folder"  
+
+
+Expand-Archive -Path "File-Of-Images-To-Unzip.zip" -DestinationPath "target_images"
+# Create 'batches' folder
+New-Item -ItemType Directory -Path "..\folder\batches" -Force | Out-Null
+# Change directory into 'fire_images'
+Set-Location -Path "..\target_images\Object"
+# Initialize counter
+$i = 0
+# --- Loop through each image in 'Object' folder and move to batch folders ---
+Get-ChildItem -Path "..\Object" -File | ForEach-Object {
+   
+    # Calculate batch number (each batch contains 100 images)
+    $batchNumber = [math]::Floor($i / 100)
+   
+    # Set the folder path for the batch
+    $batchFolder = "../batches/batch_$batchNumber"
+
+
+    # Check if the batch folder exists; if not, create it
+    if (-not (Test-Path $batchFolder)) {
+        New-Item -ItemType Directory -Path $batchFolder | Out-Null
+    }
+
+
+    # Move the current image into the appropriate batch folder
+    Move-Item $_.FullName -Destination $batchFolder
+   
+    # Increment the counter for each file processed
+    $i++
+}
+```
+
+Python script to select 10 random images (path file and file names redacted in compliance with NDA):
+
+```python
+# Import dependencies
+
+
+import zipfile
+import os
+import random
+import shutil
+
+
+# Set variables
+
+
+zip_path = r'C:\path\to\folder\File-Of-Images-To-Unzip.zip"'  # zip file path
+all_images_root = r'C:\path\to\folder\all_images'  # all_images will be folder housing unzipped images
+batch_dir = r'C:\path\to\folder\batch_folder'      # folder to store randomly selected sample images
+sample_size = 10
+
+
+with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+    zip_ref.extractall(all_images_root)
+
+
+print(f"✅ Unzipped to '{all_images_root}'")
+
+
+# Create batch folder if it doesn't exist
+
+
+os.makedirs(batch_dir, exist_ok=True)
+
+
+# Recursively collect all image files
+
+
+image_extensions = ('.jpg', '.jpeg', '.png', '.gif')
+all_images = []
+
+
+for root, dirs, files in os.walk(all_images_root):
+    for file in files:
+        if file.lower().endswith(image_extensions):
+            full_path = os.path.join(root, file)
+            all_images.append(full_path)
+
+
+# Check if there are enough images
+
+
+sample_size = 10
+if len(all_images) < sample_size:
+    raise ValueError(f"Not enough images to sample {sample_size}. Found only {len(all_images)}.")
+
+
+# Sample and copy the images
+
+
+sampled_images = random.sample(all_images, sample_size)
+
+
+for img_path in sampled_images:
+    dest_path = os.path.join(batch_dir, os.path.basename(img_path))
+    shutil.copy(img_path, dest_path)
+
+
+print(f"Copied {sample_size} random images to '{batch_dir}'.")
+```
+
 [<b>Back to Table of Contents</b>](#table-of-contents)
 
 ---
