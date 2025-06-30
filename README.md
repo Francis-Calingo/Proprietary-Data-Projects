@@ -197,6 +197,10 @@ To download the SQL file hosting the above sql script (maintaining the redaction
 
 <img src="https://img.shields.io/badge/powershell-5391FE?logo=powershell&logoColor=white&style=plastic" alt="PowerShell Badge"/>  
 
+<img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=plastic" alt="Python Badge"/>
+
+<img src="https://img.shields.io/badge/Google%20Colab-F9AB00?logo=googlecolab&logoColor=fff&style=plastic" alt="Google Colab Badge"/>
+
 ONGOING-Currently working with a client company to create a pipeline to deploy an object detection machine learning model that will augment the company’s geospatial capabilities in environmental disaster mitigation, utilizing Python, PowerShell, and Label Studio.
 
 To install Python: [Install](https://www.python.org/ftp/python/3.12.0/python-3.12.0-amd64.exe)
@@ -436,6 +440,8 @@ def test_evaluate_returns_none(setup_trainer):
 
 !pytest test_trainer.py --maxfail=1 --disable-warnings -q
 ```
+
+<img src="https://github.com/Francis-Calingo/Proprietary-Data-Projects/blob/main/images/UnitTesting.png"/>
 
 [<b>Back to Table of Contents</b>](#table-of-contents)
 
