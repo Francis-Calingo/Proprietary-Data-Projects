@@ -201,6 +201,8 @@ ONGOING-Currently working with a client company to create a pipeline to deploy a
 
 To install Python: [Install](https://www.python.org/ftp/python/3.12.0/python-3.12.0-amd64.exe)
 
+### PowerShell for Batch Uploading Images
+
 PowerShell script for installing Label Studio:
 
 ```powershell
@@ -260,6 +262,8 @@ Get-ChildItem -Path "..\Object" -File | ForEach-Object {
     $i++
 }
 ```
+
+### Python for Uploading Sample Images
 
 Python script to select 10 random images (path file and file names redacted in compliance with NDA):
 
@@ -329,6 +333,108 @@ for img_path in sampled_images:
 
 
 print(f"Copied {sample_size} random images to '{batch_dir}'.")
+```
+
+### Jupyter Notebook Script for Unit Testing
+
+Unit testing was executed in a trainer notebook:
+
+```jupyter
+with open("test_trainer.py", "w") as f:
+    f.write('''
+######======Original trainer.py script (certain parts redacted)======######
+
+from typing import Dict, Any, Optional
+import torch
+import torch.nn as nn
+#from ..utils.logging import get_logger
+
+def get_logger(name):
+    class DummyLogger:
+        def info(self, msg):
+            print(f"[{name}] {msg}")
+    return DummyLogger()
+
+logger = get_logger(__name__)
+
+class ModelTrainer:
+    """Handles model training and evaluation."""
+
+    def __init__(self, model: nn.Module, config: Dict[str, Any]):
+        #####---REDACTED---#####
+        logger.info("Initialized ModelTrainer")
+
+    def train(self,
+             train_loader: torch.utils.data.DataLoader,
+             val_loader: torch.utils.data.DataLoader,
+             num_epochs: int,
+             save_path: str) -> Dict[str, float]:
+        #####---REDACTED---#####
+        logger.info(f"Starting training for {num_epochs} epochs")
+        pass
+
+    def evaluate(self,
+                val_loader: torch.utils.data.DataLoader) -> Dict[str, float]:
+        #####---REDACTED---#####
+        logger.info("Starting model evaluation")
+        pass
+
+######======Script for unit testing with pytest======######
+
+import pytest
+import torch
+import torch.nn as nn
+
+# The ModelTrainer class is already defined in the previous cell
+
+
+# Create dummy dataset of 10 samples, each sample containing an a row 10 random numbers, and 1 label
+class DummyDataset(torch.utils.data.Dataset):
+    def __len__(self):
+        return 10
+    def __getitem__(self, idx):
+        return torch.randn(1, 10), torch.tensor(1)
+
+# Create dummy model for testing (10 input features and 1 output)
+class DummyModel(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.linear = nn.Linear(10, 1)
+    def forward(self, x):
+        return self.linear(x)
+
+# Start unit testing
+@pytest.fixture
+def setup_trainer():
+  # Give the trainer a new dummy model and an empty config
+    model = DummyModel()
+    config = {}
+    trainer = ModelTrainer(model, config)
+    return trainer, model, config
+
+def test_init(setup_trainer):
+  # Test __init__
+    trainer, model, config = setup_trainer
+    assert trainer.model == model
+    assert trainer.config == config
+
+def test_train_returns_none(setup_trainer):
+  # Test train
+    trainer, _, _ = setup_trainer
+    train_loader = torch.utils.data.DataLoader(DummyDataset(), batch_size=2)
+    val_loader = torch.utils.data.DataLoader(DummyDataset(), batch_size=2)
+    result = trainer.train(train_loader, val_loader, num_epochs=1, save_path="model.pth")
+    assert result is None
+
+def test_evaluate_returns_none(setup_trainer):
+  # Test evaluate
+    trainer, _, _ = setup_trainer
+    val_loader = torch.utils.data.DataLoader(DummyDataset(), batch_size=2)
+    result = trainer.evaluate(val_loader)
+    assert result is None
+    ''')'
+
+!pytest test_trainer.py --maxfail=1 --disable-warnings -q
 ```
 
 [<b>Back to Table of Contents</b>](#table-of-contents)
