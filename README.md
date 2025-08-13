@@ -9,6 +9,8 @@ This repo lists tasks and projects involving proprietary data (i.e., data that c
 * [M2M Tech](#m2m-tech)
 * [Filipino Canadian Youth Organizations](#filipino-canadian-youth-organizations)
 
+---
+
 # Audit at Great Canadian Casino Resort Toronto
 
 <img src="https://img.shields.io/badge/Microsoft_Excel-217346?logo=microsoft-excel&logoColor=white"/>
