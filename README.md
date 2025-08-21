@@ -3,10 +3,10 @@
 This repo lists tasks and projects involving proprietary data (i.e., data that cannot be fully disclosed to the public) and provide valuable insights for respective organizations and employers.
 
 # Table of Contents
-* [Audit at Great Canadian Casino Resort Toronto](#audit-at-great-canadian-casino-resort-toronto)
-* [Elections Canada](#elections-canada)
-* [2025 National Mental Health Datathon](#2025-national-mental-health-datathon)
-* [Object Detection Model, M2M Tech Client Company (April 2025 - July 2025)](#object-detection-model-m2m-tech-client-company-april-2025-july-2025)
+* [Audit at Great Canadian Casino Resort Toronto (August 2022 - August 2024)](#audit-at-great-canadian-casino-resort-toronto-august-2022---august-2024)
+* [Elections Canada (August 2024 - June 2025)](#elections-canada-august-2024---june-2025)
+* [2025 Converge National Mental Health Datathon](#2025-converge-national-mental-health-datathon)
+* [Object Detection Model, M2M Tech Client Company (April 2025 - July 2025)](#object-detection-model-m2m-tech-client-company-april-2025---july-2025)
 * [Filipino Canadian Youth Organizations](#filipino-canadian-youth-organizations)
 
 ---
