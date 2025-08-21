@@ -6,7 +6,7 @@ This repo lists tasks and projects involving proprietary data (i.e., data that c
 * [Audit at Great Canadian Casino Resort Toronto](#audit-at-great-canadian-casino-resort-toronto)
 * [Elections Canada](#elections-canada)
 * [2025 National Mental Health Datathon](#2025-national-mental-health-datathon)
-* [M2M Tech](#m2m-tech)
+* [Object Detection Model, M2M Tech Client Company (April 2025 - July 2025)](#object-detection-model-m2m-tech-client-company-april-2025-july-2025)
 * [Filipino Canadian Youth Organizations](#filipino-canadian-youth-organizations)
 
 ---
@@ -195,7 +195,7 @@ To download the SQL file hosting the above sql script (maintaining the redaction
 
 ---
 
-# M2M Tech
+# Object Detection Model, M2M Tech Client Company (April 2025 - July 2025)
 
 <img src="https://img.shields.io/badge/powershell-5391FE?logo=powershell&logoColor=white&style=plastic" alt="PowerShell Badge"/>  
 
@@ -203,7 +203,7 @@ To download the SQL file hosting the above sql script (maintaining the redaction
 
 <img src="https://img.shields.io/badge/Google%20Colab-F9AB00?logo=googlecolab&logoColor=fff&style=plastic" alt="Google Colab Badge"/>
 
-ONGOING-Currently working with a client company to create a pipeline to deploy an object detection machine learning model that will augment the company’s geospatial capabilities in environmental disaster mitigation, utilizing Python, PowerShell, and Label Studio.
+Under M2M Tech, collaborated in a 19-member team and supported a client company in creating a pipeline to deploy an object detection machine learning model that will augment the company’s geospatial capabilities in environmental disaster mitigation, utilizing Python, PowerShell, and Label Studio.
 
 To install Python: [Install](https://www.python.org/ftp/python/3.12.0/python-3.12.0-amd64.exe)
 
