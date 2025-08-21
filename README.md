@@ -7,11 +7,11 @@ This repo lists tasks and projects involving proprietary data (i.e., data that c
 * [Elections Canada (August 2024 - June 2025)](#elections-canada-august-2024---june-2025)
 * [2025 Converge National Mental Health Datathon](#2025-converge-national-mental-health-datathon)
 * [Object Detection Model, M2M Tech Client Company (April 2025 - July 2025)](#object-detection-model-m2m-tech-client-company-april-2025---july-2025)
-* [Filipino Canadian Youth Organizations](#filipino-canadian-youth-organizations)
+* [Filipino Canadian Youth Organizations (2016 - Present)](#filipino-canadian-youth-organizations-2016---present)
 
 ---
 
-# Audit at Great Canadian Casino Resort Toronto
+# Audit at Great Canadian Casino Resort Toronto (August 2022 - August 2024)
 
 <img src="https://img.shields.io/badge/Microsoft_Excel-217346?logo=microsoft-excel&logoColor=white"/>
 
@@ -71,7 +71,7 @@ Some rows on the fourth column will show non-zero values, which can then be easi
 
 ---
 
-# Elections Canada
+# Elections Canada (August 2024 - June 2025)
 
 <img src="https://img.shields.io/badge/Microsoft_Excel-217346?logo=microsoft-excel&logoColor=white"/>
 <img src="https://img.shields.io/badge/Media%20Monitoring-Meltwater-1DB2AC?logo=meltwater&logoColor=white"/>
@@ -119,7 +119,7 @@ Note that the riding names represent the federal ridings with the highest per-ca
 
 ---
 
-# 2025 National Mental Health Datathon
+# 2025 Converge National Mental Health Datathon
 
 <img src="https://img.shields.io/badge/Oracle-F80000?logo=oracle&logoColor=black"/>
 <img src="https://img.shields.io/badge/PLSQL-F80000?logo=oracle&logoColor=black"/>
@@ -449,7 +449,7 @@ def test_evaluate_returns_none(setup_trainer):
 
 ---
 
-# Filipino Canadian Youth Organizations
+# Filipino Canadian Youth Organizations (2016 - Present)
 
 <img src="https://img.shields.io/badge/Google%20Sheets-34A853?logo=google-sheets&logoColor=white&style=plastic" alt="Google Sheets Badge"/>  
 <img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white&style=plastic" alt="Gmail Badge"/>  
